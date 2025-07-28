@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: #000;
+            color: white;
+            overflow: hidden;
+            height: 100vh;
+        }
+
+        .video-player-container {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .top-controls {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(180deg, rgba(0,0,0,0.8) 0%, transparent 100%);
+            padding: 20px;
+            z-index: 10;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .video-info {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .video-title {
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        .video-counter {
+            font-size: 16px;
+            opacity: 0.8;
+        }
+
+        .navigation {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .nav-btn {
+            background: rgba(255,255,255,0.2);
+            border: 1px solid rgba(255,255,255,0.3);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .nav-btn:hover {
+            background: rgba(255,255,255,0.3);
+            transform: translateY(-1px);
+        }
+
+        .nav-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .nav-btn:disabled:hover {
+            transform: none;
+            background: rgba(255,255,255,0.2);
+        }
+
+        .video-list {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .video-item {
+            background: rgba(255,255,255,0.1);
+            border: 2px solid transparent;
+            padding: 6px 12px;
+            border-radius: 15px;
+            cursor: pointer;
+            font-size: 12px;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .video-item:hover {
+            background: rgba(255,255,255,0.2);
+        }
+
+        .video-item.active {
+            background: rgba(255,255,255,0.3);
+            border-color: rgba(255,255,255,0.5);
+        }
+
+        .main-video {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            background-color: #000;
+        }
+
+        .error-message {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(255, 193, 7, 0.9);
+            color: #856404;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            z-index: 20;
+            display: none;
+        }
+
+        .error-message a {
+            color: #856404;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="video-player-container">
+        <div class="top-controls">
+            <div class="video-info">
+                <div class="video-title" id="videoTitle">Medical Content</div>
+                <div class="video-counter" id="videoCounter">1 / 7</div>
+            </div>
+            
+            <div class="navigation">
+                <button class="nav-btn" id="prevBtn" onclick="previousVideo()">← Previous</button>
+                <div class="video-list" id="videoList">
+                    <div class="video-item active" onclick="selectVideo(0)">Medical Content</div>
+                    <div class="video-item" onclick="selectVideo(1)">Medical Training Day</div>
+                    <div class="video-item" onclick="selectVideo(2)">Clip 04 Web</div>
+                    <div class="video-item" onclick="selectVideo(3)">Clip 01 Final</div>
+                    <div class="video-item" onclick="selectVideo(4)">Bike Footage</div>
+                    <div class="video-item" onclick="selectVideo(5)">Teardown</div>
+                    <div class="video-item" onclick="selectVideo(6)">Carpentry Floor</div>
+                </div>
+                <button class="nav-btn" id="nextBtn" onclick="nextVideo()">Next →</button>
+            </div>
+        </div>
+
+        <video id="mainVideo" class="main-video" controls preload="metadata" onerror="showError()">
+            <source src="https://videodata3.s3.us-east-2.amazonaws.com/Medical+Content.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <div class="error-message" id="errorMessage">
+            <div>Video format not supported in this browser.</div>
+            <a href="#" id="downloadLink" download>Download video</a>
+        </div>
+    </div>
+
+    <script>
+        const videos = [
+            {
+                title: "Medical Content",
+                src: "https://videodata3.s3.us-east-2.amazonaws.com/Medical+Content.mp4",
+                type: "video/mp4"
+            },
+            {
+                title: "Medical Training Day",
+                src: "https://videodata3.s3.us-east-2.amazonaws.com/Medical+Training+Day.mp4",
+                type: "video/mp4"
+            },
+            {
+                title: "Clip 04 Web",
+                src: "https://videodata3.s3.us-east-2.amazonaws.com/clip_04_web.mp4",
+                type: "video/mp4"
+            },
+            {
+                title: "Clip 01 Final",
+                src: "https://videodata3.s3.us-east-2.amazonaws.com/clip_01_final.mkv",
+                type: "video/x-matroska"
+            },
+            {
+                title: "Bike Footage",
+                src: "https://videodata3.s3.us-east-2.amazonaws.com/bike_footage.mp4",
+                type: "video/mp4"
+            },
+            {
+                title: "Teardown",
+                src: "https://videodata3.s3.us-east-2.amazonaws.com/teardown",
+                type: "video/mp4"
+            },
+            {
+                title: "Carpentry Floor",
+                src: "https://videodata3.s3.us-east-2.amazonaws.com/carpentary+floor",
+                type: "video/mp4"
+            }
+        ];
+
+        let currentVideoIndex = 0;
+        const mainVideo = document.getElementById('mainVideo');
+        const videoTitle = document.getElementById('videoTitle');
+        const videoCounter = document.getElementById('videoCounter');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        const errorMessage = document.getElementById('errorMessage');
+        const downloadLink = document.getElementById('downloadLink');
+
+        function updateVideo(index) {
+            if (index < 0 || index >= videos.length) return;
+            
+            currentVideoIndex = index;
+            const video = videos[index];
+            
+            // Hide error message
+            errorMessage.style.display = 'none';
+            
+            // Update video source
+            if (video.type === "video/x-matroska") {
+                mainVideo.innerHTML = `
+                    <source src="${video.src}" type="video/x-matroska">
+                    <source src="${video.src}" type="video/mp4">
+                    Your browser does not support the video tag.
+                `;
+            } else {
+                mainVideo.innerHTML = `
+                    <source src="${video.src}" type="${video.type}">
+                    Your browser does not support the video tag.
+                `;
+            }
+            
+            mainVideo.load();
+            
+            // Update UI
+            videoTitle.textContent = video.title;
+            videoCounter.textContent = `${index + 1} / ${videos.length}`;
+            
+            // Update download link
+            downloadLink.href = video.src;
+            downloadLink.download = video.title;
+            
+            // Update active video item
+            document.querySelectorAll('.video-item').forEach((item, i) => {
+                item.classList.toggle('active', i === index);
+            });
+            
+            // Update navigation buttons
+            prevBtn.disabled = index === 0;
+            nextBtn.disabled = index === videos.length - 1;
+        }
+
+        function selectVideo(index) {
+            updateVideo(index);
+        }
+
+        function previousVideo() {
+            if (currentVideoIndex > 0) {
+                updateVideo(currentVideoIndex - 1);
+            }
+        }
+
+        function nextVideo() {
+            if (currentVideoIndex < videos.length - 1) {
+                updateVideo(currentVideoIndex + 1);
+            }
+        }
+
+        function showError() {
+            errorMessage.style.display = 'block';
+        }
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowLeft') {
+                previousVideo();
+            } else if (e.key === 'ArrowRight') {
+                nextVideo();
+            } else if (e.key >= '1' && e.key <= '7') {
+                const index = parseInt(e.key) - 1;
+                if (index < videos.length) {
+                    selectVideo(index);
+                }
+            }
+        });
+
+        // Auto-play next video when current one ends
+        mainVideo.addEventListener('ended', () => {
+            if (currentVideoIndex < videos.length - 1) {
+                nextVideo();
+            }
+        });
+
+        // Initialize
+        updateVideo(0);
+    </script>
+</body>
+</html> 
