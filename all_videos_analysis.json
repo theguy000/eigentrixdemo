@@ -1,0 +1,307 @@
+{
+  "Medical Content": [
+    {
+      "objects": [
+        "paramedic",
+        "patient",
+        "medical equipment (defibrillator)",
+        "helicopter interior",
+        "medical bag",
+        "oxygen tubing",
+        "patient monitor",
+        "straps",
+        "clipboard",
+        "helmet"
+      ],
+      "scene_description": "The scene takes place inside a medical helicopter. A paramedic in a black uniform and helmet is seated, reviewing a clipboard.  A patient is lying on a stretcher, connected to various medical devices including a defibrillator and monitoring equipment. Another individual, possibly a second paramedic, is partially visible in the background. The helicopter's interior is visible, showing medical equipment mounted overhead and along the walls. The patient appears to be receiving medical attention during transport.",
+      "spatial_relationships": [
+        "The paramedic is seated next to the patient.",
+        "The defibrillator is mounted above the patient.",
+        "The oxygen tubing is connected to the patient.",
+        "The patient monitor is positioned above the patient's head.",
+        "The medical bag is located near the defibrillator.",
+        "The clipboard is in the paramedic's hands.",
+        "The helmet is on the paramedic's head."
+      ],
+      "activities": [
+        "patient monitoring",
+        "medical transport",
+        "chart review",
+        "emergency medical care"
+      ],
+      "confidence_score": 0.9,
+      "professional_assessment": "The scene depicts a standard in-flight medical procedure. The equipment appears to be properly utilized and the paramedic is performing a routine check of the patient's status. The spatial arrangement of the equipment is typical for a medical helicopter. The image quality limits a more detailed assessment.",
+      "key_elements": [
+        "patient's vital signs (displayed on the monitor)",
+        "paramedic's attentiveness",
+        "secure patient positioning",
+        "functional medical equipment"
+      ],
+      "timestamp": 15,
+      "timestamp_formatted": "0:00:15"
+    },
+    {
+      "objects": [
+        "paramedic 1",
+        "paramedic 2",
+        "patient",
+        "helicopter stretcher",
+        "defibrillator/monitor (Zoll X Series)",
+        "oxygen tubing",
+        "medical monitoring equipment",
+        "helicopter interior",
+        "clipboard",
+        "gloves",
+        "helmet",
+        "N95 mask"
+      ],
+      "scene_description": "The scene takes place inside a medical helicopter. A patient is lying on a stretcher, connected to various medical monitoring equipment. Two paramedics are attending to the patient. One paramedic is seated next to the stretcher, appearing to be documenting information on a clipboard. The other paramedic is operating a Zoll X Series defibrillator/monitor, which displays vital signs. The helicopter is in flight, as evidenced by the view outside the window.",
+      "spatial_relationships": [
+        "The patient is lying on the stretcher.",
+        "The stretcher is positioned in the center of the helicopter.",
+        "The defibrillator/monitor is mounted above the patient.",
+        "Paramedic 1 is seated to the left of the stretcher.",
+        "Paramedic 2 is positioned behind the patient's head, operating the defibrillator/monitor.",
+        "Oxygen tubing is connected to the patient and runs along the stretcher.",
+        "The clipboard is in the hands of Paramedic 1."
+      ],
+      "activities": [
+        "patient monitoring",
+        "data recording",
+        "emergency medical care",
+        "in-flight medical transport"
+      ],
+      "confidence_score": 0.98,
+      "professional_assessment": "The paramedics appear to be providing appropriate and timely medical care in a challenging environment.  The use of a defibrillator/monitor suggests the patient may have a cardiac condition or other serious medical issue requiring close monitoring. The scene depicts a typical scenario of emergency medical services (EMS) during aeromedical transport.",
+      "key_elements": [
+        "Zoll X Series defibrillator/monitor (showing vital signs)",
+        "patient connected to medical equipment",
+        "paramedics actively providing care",
+        "helicopter environment"
+      ],
+      "timestamp": 45,
+      "timestamp_formatted": "0:00:45"
+    },
+    {
+      "objects": [
+        "person",
+        "helicopter interior",
+        "window",
+        "exit sign",
+        "document",
+        "safety harness",
+        "helmet",
+        "face mask"
+      ],
+      "scene_description": "The frame shows the interior of a helicopter in flight. A person wearing a black helmet, safety harness, and a face mask is seated, appearing to be reviewing a document.  The helicopter's interior is primarily light gray or white.  An exit sign is visible above a window offering a view of a rural landscape below, showing fields and a waterway.",
+      "spatial_relationships": [
+        "The person is seated in the helicopter.",
+        "The exit sign is located above the window.",
+        "The document is in the person's hands.",
+        "The window shows a view of the landscape outside.",
+        "The safety harness is worn by the person.",
+        "The helmet is on the person's head.",
+        "The face mask covers the person's mouth and nose."
+      ],
+      "activities": [
+        "reviewing a document",
+        "flying in a helicopter"
+      ],
+      "confidence_score": 0.9,
+      "professional_assessment": "The scene suggests a possible emergency medical services or law enforcement operation given the helicopter and the person's attire. The person's actions suggest they are reviewing information relevant to the flight or mission.  More context is needed for a definitive assessment.",
+      "key_elements": [
+        "helicopter",
+        "person in uniform",
+        "document",
+        "aerial view"
+      ],
+      "timestamp": 75,
+      "timestamp_formatted": "0:01:15"
+    }
+  ],
+  "Medical Training Day": [
+    {
+      "objects": [
+        "man",
+        "ambulance",
+        "cars",
+        "people",
+        "trees",
+        "field",
+        "medical bag"
+      ],
+      "scene_description": "A wide shot of a rural scene under a clear blue sky. A man in a black long-sleeved shirt stands with his arms crossed, facing away from the camera. In the background, an ambulance and several other vehicles are parked in a field. A group of people are gathered near the vehicles. The field is dry and brown, with a line of trees in the background. A medical bag is partially visible in the bottom left corner.",
+      "spatial_relationships": [
+        "The man is in the foreground.",
+        "The vehicles are in the midground.",
+        "The trees are in the background.",
+        "The people are near the vehicles.",
+        "The medical bag is in the bottom left corner, close to the camera.",
+        "The man is facing away from the camera and towards the vehicles and people."
+      ],
+      "activities": [
+        "observation",
+        "waiting",
+        "possible emergency response"
+      ],
+      "confidence_score": 0.85,
+      "professional_assessment": "The scene suggests a possible emergency response or aftermath. The presence of an ambulance and multiple vehicles, along with a group of people, indicates a significant event. The man's posture suggests observation or waiting.  Further information is needed to determine the exact nature of the event.",
+      "key_elements": [
+        "ambulance",
+        "man in uniform (likely first responder)",
+        "group of people",
+        "rural setting"
+      ],
+      "timestamp": 15,
+      "timestamp_formatted": "0:00:15"
+    },
+    {
+      "objects": [
+        "helicopter",
+        "two men",
+        "SUV",
+        "trees",
+        "grassy field"
+      ],
+      "scene_description": "The scene is an outdoor grassy field bordered by a line of trees.  A portion of a helicopter is visible in the upper left corner of the frame. Two men in dark clothing are standing in the field, appearing to wait or observe. A dark-colored SUV is parked in the background near the trees. The sky is clear and blue.",
+      "spatial_relationships": [
+        "The helicopter is positioned above and to the left of the men.",
+        "The men are standing in the field, between the helicopter and the trees.",
+        "The SUV is located behind the men and near the tree line.",
+        "The trees form a continuous line in the background."
+      ],
+      "activities": [
+        "waiting",
+        "observing"
+      ],
+      "confidence_score": 0.9,
+      "professional_assessment": "The scene suggests a possible emergency medical services (EMS) or search and rescue operation. The presence of the helicopter and the men in what appears to be uniform suggests a coordinated effort.  However, without further context, this is purely speculative.",
+      "key_elements": [
+        "helicopter",
+        "personnel",
+        "vehicle",
+        "location"
+      ],
+      "timestamp": 45,
+      "timestamp_formatted": "0:00:45"
+    },
+    {
+      "objects": [
+        "helicopter",
+        "two paramedics",
+        "stretcher (partially visible)",
+        "grassy field"
+      ],
+      "scene_description": "The scene takes place outdoors in a grassy field under a clear blue sky. A portion of a helicopter is visible in the upper right corner, suggesting a medical evacuation or emergency response. Two paramedics in dark uniforms are near the helicopter's landing area. One paramedic is bending over, possibly attending to a patient (not visible), while the other paramedic is standing, seemingly observing or preparing equipment. A portion of a stretcher is visible on the ground near the standing paramedic.",
+      "spatial_relationships": [
+        "The helicopter is positioned above and to the right of the paramedics.",
+        "The paramedics are located on the ground in the lower portion of the frame.",
+        "The stretcher is near the standing paramedic.",
+        "The paramedics are close to each other.",
+        "The grassy field extends to the horizon."
+      ],
+      "activities": [
+        "medical emergency response",
+        "patient assessment (likely)",
+        "preparation for patient transport (possibly)"
+      ],
+      "confidence_score": 0.85,
+      "professional_assessment": "The image suggests a medical emergency response, likely involving a helicopter evacuation. The paramedics appear to be assessing a situation or preparing for patient transport.  More information is needed to determine the exact nature of the emergency and the patient's condition. The quality of the image limits the detail visible.",
+      "key_elements": [
+        "helicopter",
+        "paramedics",
+        "stretcher",
+        "grassy field",
+        "clear sky"
+      ],
+      "timestamp": 75,
+      "timestamp_formatted": "0:01:15"
+    }
+  ],
+  "Clip 01 Final": [
+    {
+      "objects": [
+        "concrete structure",
+        "vegetation",
+        "sky"
+      ],
+      "scene_description": "The frame shows a high-angle, fast-moving shot of a large, unfinished or abandoned concrete structure. The structure appears to be multi-level with open window frames and a rough, unfinished concrete surface.  Lush green vegetation is visible along one side of the structure, contrasting with the grey concrete. The sky is visible in the upper right corner, suggesting an outdoor setting. The motion blur indicates a fast camera movement.",
+      "spatial_relationships": [
+        "vegetation is adjacent to the concrete structure",
+        "sky is above the concrete structure",
+        "the camera is moving rapidly over the structure"
+      ],
+      "activities": [
+        "camera movement"
+      ],
+      "confidence_score": 0.85,
+      "professional_assessment": "The image lacks any medical equipment, procedures, or personnel.  It appears to be a shot from a drone or similar device capturing a scene of an unfinished or abandoned building.  There is no evidence of any professional activity related to medicine or construction in progress.",
+      "key_elements": [
+        "unfinished concrete structure",
+        "motion blur",
+        "vegetation",
+        "sky"
+      ],
+      "timestamp": 15,
+      "timestamp_formatted": "0:00:15"
+    },
+    {
+      "objects": [
+        "concrete structure",
+        "ruined building",
+        "vegetation",
+        "water puddle"
+      ],
+      "scene_description": "The frame shows a low-angle, fast-motion shot seemingly from a moving vehicle. The primary focus is on a partially ruined concrete structure, possibly an abandoned building under construction.  A small plant sprouts from the ground near a large concrete pillar.  The ground is uneven and appears damp, with a puddle of stagnant water visible.  The background shows more of the ruined building and some overgrown vegetation.",
+      "spatial_relationships": [
+        "The plant is located near the base of a concrete pillar.",
+        "The concrete pillar is part of a larger ruined building.",
+        "The puddle of water is near the plant and the concrete pillar.",
+        "The ruined building extends into the background.",
+        "The vegetation is surrounding the ruined building."
+      ],
+      "activities": [
+        "movement (implied by motion blur)"
+      ],
+      "confidence_score": 0.85,
+      "professional_assessment": "The image lacks sufficient detail for a professional assessment of structural damage or environmental conditions. The motion blur significantly hinders a precise analysis.  A still image would be necessary for a more detailed assessment.",
+      "key_elements": [
+        "ruined concrete structure",
+        "plant life in unexpected location",
+        "motion blur"
+      ],
+      "timestamp": 45,
+      "timestamp_formatted": "0:00:45"
+    },
+    {
+      "objects": [
+        "ruined building",
+        "concrete pillars",
+        "concrete slabs",
+        "debris",
+        "vegetation",
+        "sky"
+      ],
+      "scene_description": "The frame shows a bird's-eye view of a severely dilapidated and abandoned multi-story building.  The structure is largely incomplete, with exposed concrete pillars and slabs forming the skeletal remains of what appears to have been a large building.  The ground is covered in debris and rubble.  Lush green vegetation is visible around the perimeter of the building, suggesting a period of neglect. The sky is partly cloudy.",
+      "spatial_relationships": [
+        "The concrete pillars support the remaining concrete slabs.",
+        "Debris is scattered across the ground floor of the building.",
+        "Vegetation surrounds the building.",
+        "The building is situated in a relatively open area."
+      ],
+      "activities": [
+        "None apparent. The scene depicts a state of abandonment and disrepair."
+      ],
+      "confidence_score": 0.98,
+      "professional_assessment": "The image suggests a site that requires significant structural assessment and potentially demolition.  The state of disrepair poses safety hazards.  Further investigation is needed to determine the cause of the building's collapse and to assess the environmental impact of the debris.",
+      "key_elements": [
+        "ruined structure",
+        "concrete framework",
+        "debris field",
+        "surrounding vegetation"
+      ],
+      "timestamp": 75,
+      "timestamp_formatted": "0:01:15"
+    }
+  ]
+}

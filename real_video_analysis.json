@@ -1,0 +1,125 @@
+[
+  {
+    "objects": [
+      "paramedic",
+      "patient",
+      "medical equipment (defibrillator)",
+      "helicopter interior",
+      "medical bag",
+      "oxygen tubing",
+      "patient monitor",
+      "clipboard",
+      "seatbelts",
+      "headphones"
+    ],
+    "scene_description": "The scene takes place inside a medical helicopter. A paramedic in a black uniform and helmet is seated, reviewing a clipboard.  A patient is lying on a stretcher, connected to various medical devices including a defibrillator and monitoring equipment. Another individual, possibly another medical professional, is partially visible in the background. The helicopter's interior is visible, showing medical equipment mounted on the ceiling and walls.",
+    "spatial_relationships": [
+      "The paramedic is seated to the left of the patient.",
+      "The defibrillator is mounted above the patient.",
+      "The oxygen tubing is connected to the patient.",
+      "The patient monitor is displaying vital signs.",
+      "The medical bag is located near the defibrillator.",
+      "The clipboard is in the paramedic's hands.",
+      "The paramedic is wearing a helmet and seatbelt.",
+      "The patient is lying on a stretcher.",
+      "The second person is seated behind the patient."
+    ],
+    "activities": [
+      "monitoring patient",
+      "reviewing patient data",
+      "in-flight medical care",
+      "emergency medical transport"
+    ],
+    "confidence_score": 0.9,
+    "professional_assessment": "The scene depicts a typical in-flight medical emergency response. The paramedic appears to be assessing the patient's condition and reviewing their vital signs. The equipment suggests a focus on cardiac monitoring and defibrillation readiness. The spatial arrangement of the equipment is consistent with efficient emergency medical care in a confined space.",
+    "key_elements": [
+      "patient monitoring",
+      "defibrillator",
+      "oxygen supply",
+      "in-flight medical care",
+      "paramedic assessment"
+    ],
+    "timestamp": 15,
+    "timestamp_formatted": "0:00:15"
+  },
+  {
+    "objects": [
+      "paramedic 1",
+      "paramedic 2",
+      "patient",
+      "helicopter stretcher",
+      "defibrillator/monitor (Zoll X Series)",
+      "oxygen tubing",
+      "medical monitoring equipment",
+      "helicopter interior",
+      "clipboard",
+      "gloves",
+      "helmet",
+      "N95 mask"
+    ],
+    "scene_description": "The scene takes place inside a medical helicopter. A patient is lying on a stretcher, connected to various medical monitoring equipment. Two paramedics are attending to the patient. One paramedic is seated next to the stretcher, appearing to be documenting information on a clipboard. The other paramedic is operating a Zoll X Series defibrillator/monitor, which displays vital signs. The helicopter is in flight, as evidenced by the view outside the window.",
+    "spatial_relationships": [
+      "The patient is lying on the stretcher.",
+      "The stretcher is mounted in the helicopter.",
+      "The defibrillator/monitor is mounted above the patient.",
+      "Paramedic 1 is seated next to the stretcher.",
+      "Paramedic 2 is standing behind the patient, operating the defibrillator/monitor.",
+      "Oxygen tubing is connected to the patient.",
+      "The clipboard is in the hands of Paramedic 1.",
+      "The helmet is worn by Paramedic 1.",
+      "The N95 mask is worn by Paramedic 1."
+    ],
+    "activities": [
+      "patient monitoring",
+      "data recording",
+      "emergency medical care",
+      "in-flight medical transport",
+      "defibrillator operation"
+    ],
+    "confidence_score": 0.98,
+    "professional_assessment": "The paramedics appear to be providing competent and timely emergency medical care in a challenging environment.  The use of a Zoll X Series defibrillator/monitor suggests a focus on advanced life support. The spatial arrangement of equipment and personnel is efficient for the confined space of the helicopter.",
+    "key_elements": [
+      "Zoll X Series defibrillator/monitor",
+      "patient vital signs",
+      "in-flight medical transport",
+      "paramedic expertise"
+    ],
+    "timestamp": 45,
+    "timestamp_formatted": "0:00:45"
+  },
+  {
+    "objects": [
+      "person",
+      "helicopter interior",
+      "window",
+      "exit sign",
+      "clipboard",
+      "pen",
+      "safety harness"
+    ],
+    "scene_description": "The frame shows the interior of a helicopter in flight. A person wearing a black helmet, black uniform, and a black face mask is seated, appearing to be writing on a clipboard.  The helicopter is flying over a rural landscape of green fields and a dark brown, possibly recently burned, field.  The view outside is visible through a large window.",
+    "spatial_relationships": [
+      "The person is seated in the helicopter.",
+      "The clipboard is in the person's hands.",
+      "The exit sign is located above the window.",
+      "The window shows a view of the landscape outside.",
+      "The person is wearing a safety harness.",
+      "The pen is in the person's hand, near the clipboard."
+    ],
+    "activities": [
+      "writing",
+      "flying",
+      "observing"
+    ],
+    "confidence_score": 0.9,
+    "professional_assessment": "The scene suggests a possible emergency medical services or law enforcement operation, given the person's attire and the helicopter's use. The person appears to be documenting observations or information during the flight.  More context is needed for a definitive assessment.",
+    "key_elements": [
+      "helicopter",
+      "person in uniform",
+      "rural landscape",
+      "documentation"
+    ],
+    "timestamp": 75,
+    "timestamp_formatted": "0:01:15"
+  }
+]

@@ -1,0 +1,148 @@
+[
+  {
+    "objects": [
+      "person",
+      "medical equipment",
+      "stethoscope",
+      "white coat"
+    ],
+    "scene_description": "Healthcare professional in clinical setting performing examination",
+    "spatial_relationships": [
+      "person wearing white coat",
+      "stethoscope in hand",
+      "medical environment background"
+    ],
+    "activities": [
+      "medical examination",
+      "patient consultation"
+    ],
+    "confidence_score": 0.92,
+    "bbox_locations": [
+      [
+        0.3,
+        0.2,
+        0.7,
+        0.8
+      ]
+    ],
+    "timestamp": 15,
+    "timestamp_formatted": "0:00:15"
+  },
+  {
+    "objects": [
+      "medical procedure",
+      "sterile environment",
+      "medical tools"
+    ],
+    "scene_description": "Active medical procedure in sterile clinical environment",
+    "spatial_relationships": [
+      "sterile setup",
+      "proper lighting",
+      "organized tool placement"
+    ],
+    "activities": [
+      "medical procedure",
+      "sterile technique",
+      "patient care"
+    ],
+    "confidence_score": 0.91,
+    "bbox_locations": [
+      [
+        0.2,
+        0.3,
+        0.6,
+        0.5
+      ]
+    ],
+    "timestamp": 32,
+    "timestamp_formatted": "0:00:32"
+  },
+  {
+    "objects": [
+      "medical procedure",
+      "sterile environment",
+      "medical tools"
+    ],
+    "scene_description": "Active medical procedure in sterile clinical environment",
+    "spatial_relationships": [
+      "sterile setup",
+      "proper lighting",
+      "organized tool placement"
+    ],
+    "activities": [
+      "medical procedure",
+      "sterile technique",
+      "patient care"
+    ],
+    "confidence_score": 0.91,
+    "bbox_locations": [
+      [
+        0.2,
+        0.3,
+        0.6,
+        0.5
+      ]
+    ],
+    "timestamp": 65,
+    "timestamp_formatted": "0:01:05"
+  },
+  {
+    "objects": [
+      "medical chart",
+      "clipboard",
+      "documentation",
+      "computer screen"
+    ],
+    "scene_description": "Medical documentation and record-keeping activities",
+    "spatial_relationships": [
+      "charts on desk",
+      "computer display visible",
+      "organized workspace"
+    ],
+    "activities": [
+      "documentation",
+      "record keeping",
+      "data entry"
+    ],
+    "confidence_score": 0.88,
+    "bbox_locations": [
+      [
+        0.1,
+        0.1,
+        0.8,
+        0.6
+      ]
+    ],
+    "timestamp": 88,
+    "timestamp_formatted": "0:01:28"
+  },
+  {
+    "objects": [
+      "person",
+      "medical equipment",
+      "stethoscope",
+      "white coat"
+    ],
+    "scene_description": "Healthcare professional in clinical setting performing examination",
+    "spatial_relationships": [
+      "person wearing white coat",
+      "stethoscope in hand",
+      "medical environment background"
+    ],
+    "activities": [
+      "medical examination",
+      "patient consultation"
+    ],
+    "confidence_score": 0.92,
+    "bbox_locations": [
+      [
+        0.3,
+        0.2,
+        0.7,
+        0.8
+      ]
+    ],
+    "timestamp": 120,
+    "timestamp_formatted": "0:02:00"
+  }
+]
